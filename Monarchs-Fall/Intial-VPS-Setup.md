@@ -14,7 +14,24 @@ useradd username
 usermod -aG sudo username
 ```
 ## Disabling Root and Password Login
-Edit /etc/ssh
+Edit /etc/ssh using vi or nano
+```
+nano /etc/ssh/sshd_config
+vi /etc/ssh/sshd_config
+```
+Update the following lines of the file:
+```
+PermitRootLogin no
+```
+Edit /etc/ssh/sshd_config.d//50-cloud-init.conf using vi or nano
+```
+nano /etc/ssh/sshd_config.d//50-cloud-init.conf
+vi /etc/ssh/sshd_config.d//50-cloud-init.conf
+```
+Restart ssh
+```
+systemctl restart ssh.service
+```
 
 ## Updating the hostname
 ```
