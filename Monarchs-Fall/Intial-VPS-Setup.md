@@ -1,7 +1,9 @@
 # Initial VPS Setup
 
 Initial VPS setup includes taking basic steps to secure the VPS, adding a fiewall through Hostinger's hPanel, and other minor updates to the VPS configurations for ssh. It also includes setting the hostname for the VPS and for the game panel. 
+
 ## Creating an SSH Key
+Create an ssh key for connecting to the VPS without a password.
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ssh-copy-id remote_user@www.hostname.com
