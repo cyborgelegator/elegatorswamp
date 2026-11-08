@@ -42,7 +42,7 @@ systemctl restart ssh.service
 
 Update the game panel hostname to display in address bar when visiting the game panel.
 ```
-ampinstmgr ngninxsetup
+sudo ampinstmgr setupnginx
 ```
 When prompted, enter the panel's new fully qualified domain name.
 When prompted, enter 8080 for the part.
